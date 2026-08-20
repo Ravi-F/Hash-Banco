@@ -57,6 +57,3 @@ python3 app.py
 **Notas**
 - A aplicação é uma demonstração educativa — o índice e buckets são mantidos em memória.
 - Para testes com muitos dados, ajuste `Tamanho da Página` para controlar número de páginas geradas.
-
----
-Gerado automaticamente. Para alterações, edite `README.md` no diretório do projeto.
