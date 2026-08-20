@@ -51,6 +51,3 @@ Como estender / pontos de melhoria
 Referências de arquivos
 - Código principal: [app.py](app.py#L1)
 - Dados de entrada (opcional): [words.txt](words.txt#L1)
-
----
-Arquivo gerado automaticamente; me peça alterações se quiser mais detalhes ou exemplos de execução.
