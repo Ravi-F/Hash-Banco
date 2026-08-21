@@ -1,6 +1,6 @@
-from pathlib import Path
-
+import math
 import time
+from pathlib import Path
 import tkinter as tk
 import customtkinter as ctk
 
@@ -107,8 +107,6 @@ class SistemaHashApp(ctk.CTk):
         self.txt_pag_last.pack(fill="both", expand=True)
 
     def construir_indice(self):
-        import math
-
         try:
             tam_pag = int(self.entry_tam_pagina.get())
             fr = int(self.entry_fr.get())

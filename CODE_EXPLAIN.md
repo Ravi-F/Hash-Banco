@@ -1,8 +1,9 @@
-# Explicação do Código — `app.py`
+# Explicação do Código
 
 Resumo rápido
 - Aplicação GUI que demonstra um índice hash estático em memória para buscas por palavras.
 - Interface construída com `customtkinter` sobre `tkinter`.
+- Código organizado em módulos dentro do pacote `app/`, com `app.py` como ponto de entrada.
 
 Arquitetura e componentes principais
 
@@ -49,5 +50,8 @@ Como estender / pontos de melhoria
 - Otimização: substituir encadeamento por listas de overflow mais eficientes ou alocação em blocos.
 
 Referências de arquivos
-- Código principal: [app.py](app.py#L1)
-- Dados de entrada (opcional): [words.txt](words.txt#L1)
+- Ponto de entrada: [app.py](app.py#L1)
+- Modelos (`Pagina`, `Bucket`): [app/models.py](app/models.py#L1)
+- Índice hash: [app/indice_hash.py](app/indice_hash.py#L1)
+- Interface gráfica: [app/interface.py](app/interface.py#L1)
+- Dados de entrada (opcional): [data/words.txt](data/words.txt#L1)

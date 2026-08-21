@@ -20,7 +20,7 @@ source .venv/bin/activate
 
 # instalar dependências Python
 pip install --upgrade pip
-pip install customtkinter
+pip install -r requirements.txt
 ```
 
 Se preferir não usar virtualenv, instale `customtkinter` globalmente com `pip install --user customtkinter`.
@@ -48,7 +48,7 @@ python3 app.py
 - Compare desempenho com `Executar Table Scan`.
 
 **Arquivo de dados**
-- `words.txt`: arquivo de texto com uma palavra por linha. Se presente, será utilizado como fonte de tuplas.
+- `data/words.txt`: arquivo de texto com uma palavra por linha. Se presente, será utilizado como fonte de tuplas (caso contrário, o programa gera dados de teste automaticamente).
 
 **Solução de problemas**
 - Display não abre em servidor remoto: garanta encaminhamento X (`ssh -X`) ou use um servidor X virtual (ex.: `Xvfb`).
@@ -57,3 +57,17 @@ python3 app.py
 **Notas**
 - A aplicação é uma demonstração educativa — o índice e buckets são mantidos em memória.
 - Para testes com muitos dados, ajuste `Tamanho da Página` para controlar número de páginas geradas.
+
+**Estrutura do projeto**
+```
+Hash-Banco/
+├── app.py               # Ponto de entrada da aplicação
+├── app/
+│   ├── models.py        # Classes Pagina e Bucket
+│   ├── indice_hash.py   # Lógica do índice hash estático
+│   └── interface.py     # Interface gráfica (CustomTkinter)
+├── data/
+│   └── words.txt        # Base de palavras usada como tuplas
+├── requirements.txt
+└── README.md
+```
